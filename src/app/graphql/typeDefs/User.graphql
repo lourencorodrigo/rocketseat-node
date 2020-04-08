@@ -1,0 +1,15 @@
+type User {
+  id: ID!,
+  name: String!,
+  email: String!,
+  password: String!,
+  password_hash: String,
+  provider: Boolean!,
+  createdAt: String!,
+  updatedAt: String!,
+}
+
+type Query {
+  getById(id: ID!): User,
+  getAll: [User!]!
+}
